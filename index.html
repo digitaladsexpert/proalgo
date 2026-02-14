@@ -1,163 +1,214 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="hi">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Algorithmic System</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Algo Trading Academy</title>
 
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
-
-    body {
-      background: #0b1c26;
-      color: #ffffff;
-      line-height: 1.5;
-      text-align: center;
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+      background:#f0f4f3;
+      color:#0b1220;
+      padding:0px;
+      display:flex;
+      justify-content:center;
     }
 
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 50px 20px;
+    .wrap{
+      width:100%;
+      max-width:1080px;
+      background:#fff;
+      border-radius:10px;
+      box-shadow:0 10px 30px rgba(0,0,0,0.08);
+      text-align:center;
+      padding:5px;
     }
 
-    h1 { font-size: 34px; margin-bottom: 15px; }
-
-    .subtext {
-      color: #cfe7f1;
-      font-size: 17px;
-      margin-bottom: 18px;
+    .logo{
+      width:90px;
+      height:90px;
+      border-radius:16px;
+      background:#e9f6ff;
+      margin:0 auto 14px;
+      overflow:hidden;
+    }
+    .logo img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
     }
 
-    .highlight {
-      color: #9ed9e8;
-      font-size: 14px;
-      margin-bottom: 20px;
+    .heading h1{
+      font-size:20px;
+      font-weight:700;
+      line-height:1.3;
+      margin-bottom:6px;
+    }
+    .accent{color:#0aa3ff;}
+
+    .sub-title{
+      color:#0b6b2e;
+      font-weight:700;
+      margin-bottom:6px;
     }
 
-    .risk {
-      font-size: 13px;
-      color: #ffd166;
-      margin-bottom: 28px;
+    .desc{
+      padding:10px;
+      font-size:14px;
+      margin-bottom:10px;
+      color:#333;
+    }
+    .desc small{color:#777;}
+
+    .features{
+      list-style:none;
+      padding:0;
+      margin:10px auto 18px;
+      text-align:left;
+      display:inline-block;
+    }
+    .features li{
+      font-size:14px;
+      font-weight:600;
+      color:#0b1220;
+      margin-bottom:6px;
     }
 
-    .section {
-      margin-top: 40px;
-      background: #0f2733;
-      padding: 25px;
-      border-radius: 14px;
-      text-align: left;
+    .btn-telegram{
+      background:linear-gradient(180deg,#0b7b2b,#045d1f);
+      color:#fff;
+      padding:14px 32px;
+      border-radius:40px;
+      font-weight:800;
+      font-size:18px;
+      text-decoration:none;
+      display:inline-block;
+      animation:pulseBtn 2s infinite ease-in-out;
+      box-shadow:0 0 20px rgba(11,123,43,0.4);
+      margin-bottom:14px;
     }
 
-    .section h2 {
-      font-size: 22px;
-      margin-bottom: 12px;
-      text-align: center;
+    @keyframes pulseBtn{
+      0%{transform:scale(1)}
+      50%{transform:scale(1.05)}
+      100%{transform:scale(1)}
     }
 
-    .section ul {
-      font-size: 15px;
-      color: #cfe7f1;
-      line-height: 1.8;
-      padding-left: 18px;
+    .timer-row{
+      display:flex;
+      gap:8px;
+      justify-content:center;
+      margin-bottom:14px;
+    }
+    .timer-pill{
+      background:#e6f5ff;
+      padding:8px 14px;
+      border-radius:20px;
+      font-weight:700;
     }
 
-    .btn {
-      display: inline-block;
-      margin-top: 30px;
-      padding: 16px 34px;
-      background: #28b7d6;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 12px;
-      font-size: 17px;
-      font-weight: bold;
-      transition: 0.2s ease;
+    .note{
+      font-size:14px;
+      color:#333;
+      margin-bottom:10px;
     }
 
-    .btn:hover { background: #1fa4c1; }
-
-    footer {
-      font-size: 12px;
-      color: #9bb6c1;
-      margin-top: 40px;
+    .footer-links{
+      margin-top:20px;
+      font-size:13px;
+      line-height:1.7;
+    }
+    .footer-links a{
+      color:#0a84ff;
+      text-decoration:none;
+      font-weight:600;
     }
 
-    a { color: #9ed9e8; }
-
-    @media (max-width: 600px) {
-      h1 { font-size: 26px; }
-      .subtext { font-size: 15px; }
+    .fb-disclaimer{
+      font-size:12px;
+      color:#777;
+      margin-top:20px;
+      line-height:1.5;
     }
   </style>
 </head>
 
 <body>
 
-<div class="container">
+<div class="wrap">
 
-  <h1>Algorithmic Trading Learning for Busy Professionals</h1>
-
-  <div class="subtext">
-    Discover how structured, time‑efficient algorithmic trading concepts are
-    studied in financial markets. Designed especially for working
-    professionals who cannot spend long hours on manual chart watching.
+  <div class="logo">
+    <img src="https://dae.digitaladsexpert.in/wp-content/uploads/2026/01/photo_2026-01-30-22.38.22.jpeg" alt="Logo">
   </div>
 
-  <a href="https://t.me/+ptoUAM54SDIxNTBl" class="btn" target="_blank">
-    Explore Algo Trading - Join Now
+  <div class="heading">
+    <h1>Learn <span class="accent">Algo Trading</span> with Professional Experts</h1>
+  </div>
+
+  <div class="sub-title">Automate Your Trading in Crypto, Forex & Stocks</div>
+
+  <div class="desc">
+    Discover powerful algorithmic strategies, backtesting methods, and automation tools to trade smarter — not harder.
+    <br><small>Educational purpose only • Market risk involved</small>
+  </div>
+
+  <ul class="features">
+    <li>🤖 Step‑by‑Step Algo Trading Strategy Training</li>
+    <li>📈 Live Market Automation & Backtesting Guidance</li>
+    <li>💻 Tools, Bots & Indicator Setup Tutorials</li>
+    <li>🧠 Beginner to Advanced Quant Trading Concepts</li>
+    <li>🎯 100% Free Telegram Learning Community</li>
+  </ul>
+
+  <a class="btn-telegram"
+     href="https://t.me/+AX3m2I85f_djMzI1"
+     target="_self"
+     rel="noopener">
+     Join Free Algo Trading Channel
   </a>
 
-  
-  <div class="highlight">
-    Educational insights • Systematic approach • Discipline‑focused learning
+  <div class="timer-row">
+    <div class="timer-pill" id="minutes">10 Min</div>
+    <div class="timer-pill" id="seconds">00 Sec</div>
   </div>
 
-  <div class="risk">
-    This page is for educational purposes only and does not provide
-    financial or investment advice. Trading in financial markets involves
-    risk, and results are never guaranteed.
+  <div class="note">
+    Limited free access — join now on <b>Telegram</b>
   </div>
 
-  <a href="https://t.me/+ptoUAM54SDIxNTBl" class="btn" target="_blank">
-    Explore Algo Trading - Join Now
-  </a>
-
-
-  <div class="section">
-    <h2>Who This Is For</h2>
-    <ul>
-      <li>Full‑time working professionals with limited trading time</li>
-      <li>Individuals interested in systematic market understanding</li>
-      <li>Beginners seeking disciplined financial learning</li>
-      <li>Learners focused on long‑term knowledge over shortcuts</li>
-    </ul>
-  </div>
-
-  <div class="section">
-    <h2>What You Will Explore</h2>
-    <ul>
-      <li>Basics of algorithmic trading system structure</li>
-      <li>How disciplined execution is studied in markets</li>
-      <li>Risk‑management awareness and responsible learning</li>
-      <li>Time‑efficient approaches suitable for busy schedules</li>
-    </ul>
-  </div>
-
-  <a href="https://t.me/+ptoUAM54SDIxNTBl" class="btn" target="_blank">
-    Explore Algo Trading - Join Now
-  </a>
-
-
-  <footer>
-    ProAlgoBot™ Educational Services<br /><br />
-
-    <a href="https://ElitePips.online/privacy" target="_blank">Privacy</a> |
-    <a href="https://ElitePips.online/disclaimer" target="_blank">Disclaimer</a> |
+  <div class="footer-links">
+    Ads Maintained By
+    <a href="https://t.me/+ifc6dyg-xiA2ZGE1" target="_blank">Digital Ads Expert</a><br><br>
+    <a href="https://ElitePips.online/privacy" target="_blank">Privacy Policy</a> •
+    <a href="https://ElitePips.online/disclaimer" target="_blank">Disclaimer</a> •
     <a href="https://ElitePips.online/terms" target="_blank">Terms</a>
-  </footer>
+  </div>
+
+  <div class="fb-disclaimer">
+    This site is not a part of the Facebook™ website or Facebook Inc.
+    This site is NOT endorsed by Facebook™ in any way.
+  </div>
 
 </div>
+
+<script>
+let remaining = 10 * 60;
+const m = document.getElementById("minutes");
+const s = document.getElementById("seconds");
+
+function updateTimer(){
+  if(remaining <= 0) return;
+  const min = Math.floor(remaining / 60);
+  const sec = remaining % 60;
+  m.textContent = (min < 10 ? "0"+min : min) + " Min";
+  s.textContent = (sec < 10 ? "0"+sec : sec) + " Sec";
+  remaining--;
+}
+updateTimer();
+setInterval(updateTimer, 1000);
+</script>
 
 </body>
 </html>
